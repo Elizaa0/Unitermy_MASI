@@ -80,10 +80,10 @@ const UnitermApp = () => {
   return (
     <div className="app-container">
       <div className="form-section">
-        <h1>🧩 Uniterm Parallelizer</h1>
+        <h1>🧩 Zrównoleglanie Unitermów</h1>
 
         <div className="uniterm-box">
-          <label>Uniterm poziomy:</label>
+          <label>Uniterm pierwszy:</label>
           <input
             type="text"
             value={horizontalUniterm}
@@ -93,7 +93,7 @@ const UnitermApp = () => {
         </div>
 
         <div className="uniterm-box">
-          <label>Uniterm pionowy:</label>
+          <label>Uniterm drugi:</label>
           <input
             type="text"
             value={verticalUniterm}

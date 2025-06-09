@@ -8,7 +8,7 @@ const App = () => {
     <div className="app-container">
       {/* Sekcja formularza */}
       <div className="form-section">
-        <h1>Uniterm Parallelizer</h1>
+        <h1>Unitermy</h1>
         <UnitermApp />
       </div>
       

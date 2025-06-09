@@ -1,4 +1,3 @@
-// UnitermParallel.jsx
 import React from "react";
 import { Stage, Layer, Line, Text, Group } from "react-konva";
 
