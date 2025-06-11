@@ -12,7 +12,6 @@ const UnitermApp = () => {
   const [history, setHistory] = useState([]);
   const [refreshing, setRefreshing] = useState(false);
 
-  // Pobieranie historii w czasie rzeczywistym
   useEffect(() => {
     const unsubscribe = onSnapshot(
       collection(db, 'uniterms'),
@@ -28,7 +27,6 @@ const UnitermApp = () => {
     return () => unsubscribe();
   }, []);
 
-  // Ręczne odświeżanie historii (pobranie najnowszych danych z bazy)
   const handleRefreshHistory = async () => {
     setRefreshing(true);
     const snapshot = await getDocs(collection(db, 'uniterms'));
@@ -68,7 +66,6 @@ const UnitermApp = () => {
     }
   };
 
-  // Wczytaj wizualizację z historii
   const loadFromHistory = (item) => {
     setHorizontalUniterm(item.horizontal);
     setVerticalUniterm(item.vertical);

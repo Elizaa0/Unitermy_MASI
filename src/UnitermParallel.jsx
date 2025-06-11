@@ -28,7 +28,6 @@ const VerticalHalfRect = ({ x, y, width, height, strokeWidth = 4, children }) =>
 const UnitermParallel = ({ horizontalUniterm, verticalUniterm, result, showResult, selectedPosition }) => {
   const formatText = (text) => text.replace(/[()]/g, '').replace(/\s*;\s*/g, '\n;\n');
 
-  // Funkcja do poprawnego dzielenia unitermu na najwyższym poziomie
   const splitTopLevelUniterm = (str) => {
     let depth = 0;
     let splitIdx = -1;
